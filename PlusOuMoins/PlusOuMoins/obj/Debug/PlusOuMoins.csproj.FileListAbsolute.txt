@@ -4,3 +4,9 @@ C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\PlusOuMoins\
 C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.csprojResolveAssemblyReference.cache
 C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.exe
 C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.pdb
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.exe.config
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.exe
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.pdb
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.exe
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.pdb
+C:\Users\Ted\Documents\Visual Studio 2015\Projects\OpenClassRoom_C#\TutoCSharp\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.csprojResolveAssemblyReference.cache

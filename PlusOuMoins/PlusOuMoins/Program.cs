@@ -8,53 +8,26 @@ namespace PlusOuMoins
 {
     class Program
     {
-        class nombreInconnu
-        {
-            private int m_nonbreInconnu;
-
-            public nombreInconnu()
-            {
-                System.Random rand = new System.Random();
-                m_nonbreInconnu = rand.Next(100);
-            }
-
-            public int Nombre
-            {
-                get { return m_nonbreInconnu; }
-            }
-  
-        }
-
         static void Main(string[] args)
         {
-            nombreInconnu nombreInconnu=new nombreInconnu() ;
             Console.WriteLine("Bienvennue au super jeu de marde !");
             Console.WriteLine("Entrez un nombre entre 0 et 100");
-            string str = Console.ReadLine();
+
+            nombreInconnu nombreInconnu = new nombreInconnu();
             int guess = 0;
-            int.TryParse(str, out guess);
             int nombre = nombreInconnu.Nombre;
-            while (guess != nombre)
+            int essai = nombreInconnu.Essai;
+
+            do
             {
-                if (guess < nombre)
-                {
-                    Console.WriteLine("C'est plus !");
-                    Console.WriteLine("nouvelle tentative!");
-                    string str2 = Console.ReadLine();
-                    int.TryParse(str2, out guess);
-                }
-                else if (guess > nombre)
-                {
-                    Console.WriteLine("C'est moins !");
-                    Console.WriteLine("nouvelle tentative!");
-                    string str2 = Console.ReadLine();
-                    int.TryParse(str2, out guess);
-                }
-                else
-                {
-                Console.WriteLine("C'est bon !");
-                }
-            }
+
+                string str = Console.ReadLine();
+                int.TryParse(str, out guess);
+                nombreInconnu.plusOuMoins(guess);
+                essai = nombreInconnu.Essai;
+
+            } while (guess != nombre && essai >= 0);
+
             Console.Read();
         }
     }
