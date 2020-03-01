@@ -15,29 +15,28 @@ namespace PlusOuMoins
             m_nombreEssai = 5;
         }
 
-        public int Nombre
+        public bool verif (int guess)
         {
-            get { return m_nombreInconnu; }
+            bool check = true;
+            if (guess == m_nombreInconnu)
+            {
+                return check;
+            }
+            else
+            {
+                check = false;
+                return check;
+            }
         }
+
         public int Essai
         {
             get { return m_nombreEssai; }
+            set { m_nombreEssai=value; }
         }
 
         public void plusOuMoins(int guess)
         { 
-            if (guess < m_nombreInconnu)
-            {
-                Console.WriteLine("C'est plus !");
-            }
-            else if (guess > m_nombreInconnu)
-            {
-                Console.WriteLine("C'est moins !");
-            }
-            else
-            {
-                Console.WriteLine("Bravo! Vous avez trouvez!");
-            }
 
             if (m_nombreEssai == 0)
             {
@@ -47,8 +46,22 @@ namespace PlusOuMoins
             }
             else
             {
-                Console.WriteLine("Il vous reste " + m_nombreEssai.ToString() + " tentatives");
-                m_nombreEssai--;
+                if (guess < m_nombreInconnu)
+                {
+                    Console.WriteLine("C'est plus !");
+                    Console.WriteLine("Il vous reste " + m_nombreEssai.ToString() + " tentatives");
+                    m_nombreEssai--;
+                }
+                else if (guess > m_nombreInconnu)
+                {
+                    Console.WriteLine("C'est moins !");
+                    Console.WriteLine("Il vous reste " + m_nombreEssai.ToString() + " tentatives");
+                    m_nombreEssai--;
+                }
+                else
+                {
+                    Console.WriteLine("Bravo! Vous avez trouvez!");
+                }
             }
         }
 
